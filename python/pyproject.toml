@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "minimal-python-project-boilerplate"
+name = "app"
 version = "0.1.0"
 description = ""
 authors = ["yukiyan <wakayama0215@gmail.com>"]
