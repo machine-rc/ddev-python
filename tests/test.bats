@@ -14,15 +14,15 @@ setup() {
 health_checks() {
   # Do something useful here that verifies the add-on
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
-  ddev logs -s python-app
-  ddev exec "curl -s https://localhost:443/"
+  ddev logs -s python-fastapi
+  ddev exec "curl -s https://test-python.ddev.site:8000"
 }
 
 teardown() {
   set -eu -o pipefail
   cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
   ddev delete -Oy ${PROJNAME} >/dev/null 2>&1
-  [ "${TESTDIR}" != "" ] && rm -rf ${TESTDIR}
+  [ "${TESTDIR}" != "" ] && sudo rm -rf ${TESTDIR}
 }
 
 @test "install from directory" {
