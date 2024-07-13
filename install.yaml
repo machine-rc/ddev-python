@@ -1,0 +1,6 @@
+name: python
+
+pre_install_actions:
+project_files:
+- docker-compose.python.yaml
+- python/

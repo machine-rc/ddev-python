@@ -1,5 +1,4 @@
 FROM python:3.8.1
-LABEL maintainer="wakayama0215@gmail.com"
 
 ENV POETRY_VIRTUALENVS_CREATE=false
 
