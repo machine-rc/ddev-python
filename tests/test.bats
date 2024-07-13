@@ -15,7 +15,7 @@ health_checks() {
   # Do something useful here that verifies the add-on
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
   ddev logs -s python-app
-  ddev exec "curl -s https://localhost:443/"
+  ddev exec "curl -s https://localhost:8000/"
 }
 
 teardown() {
