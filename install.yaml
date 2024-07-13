@@ -1,4 +1,4 @@
-name: dotnet
+name: python
 
 pre_install_actions:
 project_files:
